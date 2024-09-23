@@ -7,4 +7,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface PaymentRepository extends MongoRepository<Payment, String> {
     // Additional query methods if needed
+
+    Payment findByCustomerId(String customerId);
 }
